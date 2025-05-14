@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# Profile Viewer with Interactive Map
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a web application built using **React** that allows users to view a collection of profiles. Each profile contains essential information such as name, photo, description, and address. The application integrates an interactive map to display the geographical location of each profile. It also provides functionality to search, filter, and manage profiles, making it a user-friendly and dynamic platform.
 
-In the project directory, you can run:
+The application offers the following features:
 
-### `npm start`
+- Display a list of profiles with essential information.
+- View geographical locations of profiles on an interactive map.
+- Search and filter profiles based on specific criteria.
+- Admin dashboard to add, edit, or delete profiles.
+- Profile details page for in-depth information about each profile.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Profile Display**: A collection of profiles with name, photograph, description, and address.
+2. **Interactive Mapping**: Use **Mapbox API** to render an interactive map with markers indicating the addresses of each profile.
+3. **Profile Summary Button**: Click the "Summary" button to display the map with a marker showing the selected profile’s address.
+4. **Search and Filter Functionality**: Users can search for profiles by name or filter based on location.
+5. **Admin Dashboard**: Admins can add, edit, or delete profiles, and the changes will be stored in local storage.
+6. **Responsive Design**: The app is designed to be responsive, providing a seamless experience across desktop and mobile devices.
+7. **Error Handling**: Robust error handling, especially for invalid addresses or failed map service requests.
+8. **Profile Details Page**: A separate page with detailed information about the profile, including interests and contact information.
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: Frontend framework to build the user interface.
+- **Mapbox API**: Used to render the interactive map with geographic locations of profiles.
+- **Tailwind CSS**: A utility-first CSS framework for styling the components.
+- **UUID**: To generate unique IDs for profiles.
+- **Local Storage**: To store profiles persistently on the client side.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run this project locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Node.js**: Ensure that you have Node.js and npm installed. You can download them from [here](https://nodejs.org/).
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/profile-viewer.git
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2.cd profile-viewer
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3.npm install
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4.npm start
 
-## Learn More
+admin route- localhost:3000/admin
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+FILE STRUCTURE
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+/src
+/components
+/Admin.js # Admin dashboard for adding/editing profiles
+/Home.js # Home page where profiles are displayed
+/SearchFilter.js # Search bar component to filter profiles
+/ProfileDetails.js # Profile details page
+/App.js # Main entry point of the application
+/index.js # Rendering the React app
+/styles.css # Custom styles (if any)

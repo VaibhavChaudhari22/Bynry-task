@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "photo": "https://via.placeholder.com/100",
+    "description": "Frontend Developer from NY",
+    "lat": 40.7128,
+    "lng": -74.006,
+    "contact": "john@example.com",
+    "interests": ["React", "Travel"]
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "photo": "https://via.placeholder.com/100",
+    "description": "UI Designer from LA",
+    "lat": 34.0522,
+    "lng": -118.2437,
+    "contact": "jane@example.com",
+    "interests": ["Design", "Art"]
+  }
+]
